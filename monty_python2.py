@@ -1,0 +1,16 @@
+#!/usr/bin/env python3
+round = 0           # integer round initiated to 0
+while True:        # sets up an infinite loop condition
+    round = round + 1     # increase the round counter
+    print('Finish the movie title, "Monty Python\'s The Life of ______"')
+    answer = input("Your guess--> ")    # string ans collected from user
+    if answer == "I don't know the movie": # logic to check if user gave correct answer
+        print('Correct!')
+        break             # break statement escapes the while loop
+    elif round == 3:    # logic to ensure round has not yet reached 3
+        print("Sorry, I was fooling you, I don't know the movie.")
+        break             # break statement escapes the while loop
+    else:                 # if answer was wrong, and round is not yet equal to 3
+        print('Sorry. Try again!')
+
+
