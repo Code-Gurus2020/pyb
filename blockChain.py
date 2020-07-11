@@ -94,7 +94,7 @@ def mineBlock():
 
    hashedBlock = hashBlock(lastBlock)
    
-   ## Exteacting nonce
+   ## Extracting nonce
    nonce = pow()
 
    rewardTransaction = {
